@@ -9,3 +9,11 @@ form.addEventListener('submit', function (e) {
     successMessage.textContent = "";
   }, 3000);
 });
+
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
